@@ -1,30 +1,30 @@
 {
-  "conflicting": {
-  },
-  "replacing": {
-  },
   "dependencies": {
   },
-  "recommendations": {
-  },
-  "version": "0.0.1",
   "maintainer_email": "john.fitzpatrick@rightscale.com",
-  "maintainer": "JAF Company",
   "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "description": "This cookbook Configures jaf001 v0.2",
-  "groupings": {
-  },
+  "version": "0.0.1",
   "license": "All rights reserved",
   "recipes": {
-    "jaf001::default": "jaf001 descriptioni v0.2"
-  },
-  "suggestions": {
-  },
-  "providing": {
+    "jaf001::default": "jaf001 descriptioni v0.1"
   },
   "attributes": {
   },
+  "providing": {
+  },
+  "suggestions": {
+  },
+  "recommendations": {
+  },
+  "maintainer": "JAF Company",
+  "groupings": {
+  },
+  "description": "This cookbook Configures jaf001 v0.1",
+  "replacing": {
+  },
   "platforms": {
+  },
+  "conflicting": {
   },
   "name": "jaf001"
 }
