@@ -1,0 +1,30 @@
+{
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "description": "Installs/Configures jaf011012",
+  "recipes": {
+    "jaf101112:default": "JAFs first recipe"
+  },
+  "platforms": {
+  },
+  "groupings": {
+  },
+  "recommendations": {
+  },
+  "version": "0.0.1",
+  "name": "jaf011012",
+  "suggestions": {
+  },
+  "license": "All rights reserved",
+  "attributes": {
+  },
+  "providing": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "dependencies": {
+  },
+  "maintainer_email": "YOUR_EMAIL"
+}
