@@ -1,0 +1,30 @@
+{
+  "recommendations": {
+  },
+  "replacing": {
+  },
+  "dependencies": {
+  },
+  "name": "jaf001",
+  "suggestions": {
+  },
+  "attributes": {
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "version": "0.0.1",
+  "recipes": {
+    "jaf001::default": "jaf001 description"
+  },
+  "providing": {
+  },
+  "license": "All rights reserved",
+  "maintainer": "YOUR_COMPANY_NAME",
+  "platforms": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "groupings": {
+  },
+  "description": "This cookbook Configures jaf001",
+  "conflicting": {
+  }
+}
