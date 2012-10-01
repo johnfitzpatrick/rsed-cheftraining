@@ -1,5 +1,5 @@
-maintainer       "YOUR_COMPANY_NAME"
-maintainer_email "YOUR_EMAIL"
+maintainer       "JAF Company"
+maintainer_email "john.fitzpatrick@rightscale.com"
 license          "All rights reserved"
 description      "This cookbook Configures jaf001"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))

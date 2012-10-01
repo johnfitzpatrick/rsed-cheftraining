@@ -1,30 +1,30 @@
 {
-  "description": "My cookbook jaf011012",
-  "platforms": {
+  "recommendations": {
   },
+  "name": "jaf011012",
   "providing": {
   },
-  "maintainer_email": "YOUR_EMAIL",
-  "maintainer": "YOUR_COMPANY_NAME",
   "attributes": {
   },
-  "version": "0.0.1",
   "recipes": {
     "jaf011012::default": "JAFs first recipe"
   },
-  "groupings": {
+  "platforms": {
   },
-  "suggestions": {
-  },
+  "version": "0.0.1",
+  "license": "All rights reserved",
   "replacing": {
   },
   "conflicting": {
   },
-  "license": "All rights reserved",
-  "recommendations": {
+  "suggestions": {
   },
   "dependencies": {
   },
   "long_description": "Description\n===========\nJust a nonsense recipe\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "name": "jaf011012"
+  "maintainer_email": "YOUR_EMAIL",
+  "groupings": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "description": "My cookbook jaf011012"
 }
