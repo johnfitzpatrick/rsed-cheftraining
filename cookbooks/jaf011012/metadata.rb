@@ -5,4 +5,4 @@ description      "My cookbook jaf011012"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.0.1"
 
-recipe "jaf011012:default","JAFs first recipe"
+recipe "jaf011012::default","JAFs first recipe"
