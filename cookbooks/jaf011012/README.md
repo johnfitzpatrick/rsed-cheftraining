@@ -1,5 +1,6 @@
 Description
 ===========
+Just a nonsense recipe
 
 Requirements
 ============
