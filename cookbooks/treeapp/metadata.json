@@ -1,0 +1,31 @@
+{
+  "providing": {
+  },
+  "replacing": {
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "maintainer": "JAF Company",
+  "name": "treeapp",
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "description": "Installs/Configures tree app",
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "license": "All rights reserved",
+  "maintainer_email": "john.fitzpatrick@rightscale.com",
+  "version": "0.0.1",
+  "recipes": {
+    "treeapp:install": "Install tree app"
+  }
+}
