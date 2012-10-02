@@ -7,4 +7,4 @@ version          "0.0.1"
 
 depends "rightscale"
 
-recipe "treeapp:install", "Install tree app"
+recipe "treeapp::install", "Install tree app"
