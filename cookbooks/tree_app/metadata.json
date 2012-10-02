@@ -1,0 +1,31 @@
+{
+  "attributes": {
+  },
+  "platforms": {
+  },
+  "description": "Installs tree_app",
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "groupings": {
+  },
+  "providing": {
+  },
+  "recommendations": {
+  },
+  "replacing": {
+  },
+  "license": "All rights reserved",
+  "name": "tree_app",
+  "version": "0.0.1",
+  "conflicting": {
+  },
+  "maintainer_email": "email@example.com",
+  "recipes": {
+    "tree_app::install": "Install tree app"
+  },
+  "suggestions": {
+  },
+  "maintainer": "Your Company"
+}
