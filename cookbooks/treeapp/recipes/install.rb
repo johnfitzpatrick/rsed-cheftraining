@@ -10,7 +10,7 @@ rightscale_marker :begin
 log "installing tree"
 
 package "tree" do
-  action :install
+ action :install
 end
 
 rightscale_marker :end
