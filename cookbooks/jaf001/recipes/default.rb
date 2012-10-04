@@ -7,4 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-log "This is default recipe in cookbook jaf001"
+log "This is default recipe in cookbook jaf001 - Oct 4th"

@@ -9,8 +9,15 @@
 rightscale_marker :begin
 log "installing tree"
 
-package "tree" do
- action :install
-end
+package_name = value_for_platform(
+  ["centos", "redhat"] => { "default" => "tree" },
+    ["ubuntu", "debian"] => { "default" => "tree" }
+    )
+
+log "The package that will be installed is #{package_name}"
+
+package package_name do
+  action :install
+  end
 
 rightscale_marker :end
