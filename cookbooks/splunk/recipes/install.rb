@@ -6,6 +6,11 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+rightscale_marker :begin
+
+log "installing Splunk"
+
 user node[:splunk][:user] do
  action :create
  system true
@@ -30,4 +35,6 @@ bash "install_splunk" do
   tar -xvf splunk.tar
  EOH
 end 
+
+rightscale_marker :end
 
