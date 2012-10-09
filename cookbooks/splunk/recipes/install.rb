@@ -19,15 +19,14 @@ directory node[:splunk][:install] do
  action :create 
 end 
 
-cookbook_file "#{Chef::Config[:file_cache_path]}/splunk.tar" do   
+remote_file "#{node[:splunk][:install]}/splunk.tar" do   
  source node[:splunk][:installer]
- action :create_if_missing 
-end 
+  action :create_if_missing 
+  end 
 
 bash "install_splunk" do
  cwd node[:splunk][:install]
  code <<-EOH
-  cp Chef::Config[:file_cache_path]/splunk.tar .
   tar -xvf splunk.tar
  EOH
 end 
