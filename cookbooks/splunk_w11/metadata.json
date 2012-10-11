@@ -1,0 +1,30 @@
+{
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "providing": {
+  },
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "recipes": {
+    "splunk_w11::default": "Installs splunk from a tar a file - V1"
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures splunk_w11",
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "conflicting": {
+  },
+  "license": "All rights reserved",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "name": "splunk_w11",
+  "maintainer": "YOUR_COMPANY_NAME",
+  "recommendations": {
+  },
+  "maintainer_email": "YOUR_EMAIL"
+}
