@@ -16,7 +16,7 @@ end
 
 
 directory node[:splunk_w11][:install] do   
-owner  node[:splunk_w11][:user]
+owner node[:splunk_w11][:user]
 mode "0755"   
 action :create 
 end 
