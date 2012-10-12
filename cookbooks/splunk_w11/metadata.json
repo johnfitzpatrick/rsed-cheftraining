@@ -1,31 +1,31 @@
 {
-  "maintainer": "YOUR_COMPANY_NAME",
-  "version": "0.0.1",
-  "suggestions": {
-  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
-  "groupings": {
+  "maintainer_email": "YOUR_EMAIL",
+  "replacing": {
   },
-  "recipes": {
-    "splunk_w11::default": "Installs splunk from a tar a file - V2"
-  },
-  "conflicting": {
+  "providing": {
   },
   "recommendations": {
   },
   "license": "All rights reserved",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "attributes": {
+  "version": "0.0.1",
+  "recipes": {
+    "splunk_w11::install": "Installs splunk from a tar a file - V2"
   },
-  "providing": {
+  "conflicting": {
   },
+  "suggestions": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
   "description": "Installs/Configures splunk_w11",
-  "name": "splunk_w11",
-  "replacing": {
-  },
   "platforms": {
   },
-  "maintainer_email": "YOUR_EMAIL"
+  "name": "splunk_w11",
+  "groupings": {
+  },
+  "attributes": {
+  }
 }
