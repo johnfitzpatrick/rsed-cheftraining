@@ -11,12 +11,12 @@ log "installing Splunk"
 user node[:splunk][:user] do
 action :create
 system true
-shell "/bin/false"
+shell "/bin/bash"
 end 
 
 
 directory node[:splunk][:install] do   
-owner "splunk"
+owner  node[:splunk][:user]
 mode "0755"   
 action :create 
 end 
