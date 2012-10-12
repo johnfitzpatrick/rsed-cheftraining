@@ -1,31 +1,31 @@
 {
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "dependencies": {
-    "rightscale": ">= 0.0.0"
-  },
-  "maintainer_email": "YOUR_EMAIL",
-  "replacing": {
-  },
-  "providing": {
-  },
-  "recommendations": {
-  },
-  "license": "All rights reserved",
-  "version": "0.0.1",
   "recipes": {
     "splunk_w11::install": "Installs splunk from a tar a file - V2"
   },
   "conflicting": {
   },
-  "suggestions": {
+  "license": "All rights reserved",
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "recommendations": {
   },
   "maintainer": "YOUR_COMPANY_NAME",
-  "description": "Installs/Configures splunk_w11",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "suggestions": {
+  },
   "platforms": {
   },
-  "name": "splunk_w11",
   "groupings": {
   },
   "attributes": {
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "description": "Installs/Configures splunk_w11",
+  "name": "splunk_w11",
+  "version": "0.0.1",
+  "providing": {
+  },
+  "replacing": {
   }
 }
