@@ -8,7 +8,12 @@ rightscale_marker :begin
 
 log "installing Splunk"
 
-set_user "splunk_w11"
+user node[:splunk_w11][:user] do
+action :create
+system true
+shell "/bin/bash"
+end 
+
 
 directory node[:splunk_w11][:install] do   
 owner node[:splunk_w11][:user]
