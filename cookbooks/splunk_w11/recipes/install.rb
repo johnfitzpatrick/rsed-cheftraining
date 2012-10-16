@@ -11,19 +11,19 @@ log "installing Splunk"
 set_user "#{node[:splunk_w11][:user]}"
 #set_user "splunk_w11"
 
-directory node[:splunk_w11][:install] do   
+directory node[:splunk_w11][:installdir] do   
 owner node[:splunk_w11][:user]
 mode "0755"   
 action :create 
 end 
 
-remote_file "#{node[:splunk_w11][:install]}/splunk.tar" do   
+remote_file "#{node[:splunk_w11][:installdir]}/splunk.tar" do   
 source node[:splunk_w11][:installer]
 action :create_if_missing 
 end 
 
 bash "install_splunk" do
-cwd node[:splunk_w11][:install]
+cwd node[:splunk_w11][:installdir]
 code <<-EOH
 tar -xvf splunk.tar
 EOH
@@ -31,30 +31,30 @@ end
 
 
 
-template "#{node[:splunk][:installdir]}/bin/startsplunk}" do 
+template "#{node[:splunk][:installdir]}/bin/startsplunk" do 
   source "startstopsplunk.erb"
     mode 0755
       action :create
         variables({
-                    :action => “start”
+                    :action => "start"
                       })
         end
 
-        template "#{node[:splunk][:installdir]}/bin/stopsplunk}" do 
+        template "#{node[:splunk][:installdir]}/bin/stopsplunk" do 
           source "startstopsplunk.erb"
             mode 0755
               action :create
                 variables({
-                            :action => “stop”
+                            :action => "stop"
                               })
                 end
 
-                template "#{node[:splunk][:installdir]}/bin/restartsplunk}" do 
+                template "#{node[:splunk][:installdir]}/bin/restartsplunk" do 
                   source "startstopsplunk.erb"
                     mode 0755
                       action :create
                         variables({
-                                    :action => “restart”
+                                    :action => "restart"
                                       })
                         end
 
