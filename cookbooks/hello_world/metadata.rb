@@ -9,6 +9,6 @@ recipe "hello_world::default", "Prints hello world to the audit entry"
 
 attribute "hello_world/name",
   :display_name => ”Your Name",
-  :description => ”Please enter your name",
-  :required => ”required", 
+  :description => "Please enter your name",
+  :required => "required", 
   :recipes => [ "hello_world::default" ]
