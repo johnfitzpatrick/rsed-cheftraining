@@ -7,4 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-log "Hello world!"
+log "Hello world! My name is #{node[:hello_world][:name]}"
