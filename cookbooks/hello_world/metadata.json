@@ -1,43 +1,43 @@
 {
-  "version": "0.0.1",
-  "attributes": {
-    "hello_world/name": {
-      "display_name": "Your Name",
-      "description": "Please enter your name",
-      "recipes": [
-        "hello_world::default"
-      ],
-      "type": "string",
-      "required": "required",
-      "calculated": false,
-      "choice": [
-
-      ]
-    }
+  "recommendations": {
   },
-  "suggestions": {
+  "maintainer_email": "ryan.geyer@rightscale.com",
+  "dependencies": {
   },
-  "platforms": {
-  },
-  "description": "Installs/Configures hello_world",
+  "license": "All rights reserved",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
   "recipes": {
     "hello_world::default": "Prints hello world to the audit entry"
   },
-  "dependencies": {
+  "attributes": {
+    "hello_world/name": {
+      "display_name": "Your Name",
+      "type": "string",
+      "recipes": [
+        "hello_world::default"
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "required": "required",
+      "description": "Please enter your name"
+    }
   },
   "groupings": {
   },
-  "maintainer_email": "ryan.geyer@rightscale.com",
-  "providing": {
-  },
-  "recommendations": {
-  },
-  "name": "hello_world",
-  "license": "All rights reserved",
-  "maintainer": "RightScale",
-  "replacing": {
-  },
   "conflicting": {
   },
-  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n"
+  "platforms": {
+  },
+  "suggestions": {
+  },
+  "version": "0.0.1",
+  "providing": {
+  },
+  "maintainer": "RightScale",
+  "name": "hello_world",
+  "replacing": {
+  },
+  "description": "Installs/Configures hello_world"
 }
