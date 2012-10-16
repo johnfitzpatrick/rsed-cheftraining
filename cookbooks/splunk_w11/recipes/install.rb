@@ -29,4 +29,33 @@ tar -xvf splunk.tar
 EOH
 end 
 
+
+
+template "#{node[:splunk][:installdir]}/bin/startsplunk}" do 
+  source "startstopsplunk.erb"
+    mode 0755
+      action :create
+        variables({
+                    :action => “start”
+                      })
+        end
+
+        template "#{node[:splunk][:installdir]}/bin/stopsplunk}" do 
+          source "startstopsplunk.erb"
+            mode 0755
+              action :create
+                variables({
+                            :action => “stop”
+                              })
+                end
+
+                template "#{node[:splunk][:installdir]}/bin/restartsplunk}" do 
+                  source "startstopsplunk.erb"
+                    mode 0755
+                      action :create
+                        variables({
+                                    :action => “restart”
+                                      })
+                        end
+
 rightscale_marker :end
