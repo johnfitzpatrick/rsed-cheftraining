@@ -17,7 +17,17 @@ mode "0755"
 action :create 
 end 
 
-remote_file "#{node[:splunk_w11][:installdir]}/splunk.tar" do   
+#template "#{node[:splunk_w11][:installdir]}/bin/startsplunk" do 
+  #source "startstopsplunk.erb"
+  #mode 0755
+  #action :create
+  #variables({
+  #  :action => "start"
+  #         })
+# end
+
+
+remote_file "node[:splunk_w11][:installdir]/splunk.tar" do   
 source node[:splunk_w11][:installer]
 action :create_if_missing 
 end 
@@ -31,31 +41,31 @@ end
 
 
 
-template "#{node[:splunk][:installdir]}/bin/startsplunk" do 
-  source "startstopsplunk.erb"
-    mode 0755
-      action :create
-        variables({
-                    :action => "start"
-                      })
-        end
+#template "node[:splunk][:installdir]/bin/startsplunk" do 
+#  source "startstopsplunk.erb"
+#    mode 0755
+#      action :create
+#        variables({
+#                    :action => "start"
+#                      })
+#        end
 
-        template "#{node[:splunk][:installdir]}/bin/stopsplunk" do 
-          source "startstopsplunk.erb"
-            mode 0755
-              action :create
-                variables({
-                            :action => "stop"
-                              })
-                end
-
-                template "#{node[:splunk][:installdir]}/bin/restartsplunk" do 
-                  source "startstopsplunk.erb"
-                    mode 0755
-                      action :create
-                        variables({
-                                    :action => "restart"
-                                      })
-                        end
+#        template "#{node[:splunk][:installdir]}/bin/stopsplunk" do 
+#         source "startstopsplunk.erb"
+#            mode 0755
+#              action :create
+#                variables({
+#                            :action => "stop"
+#                              })
+#                end
+#
+#                template "#{node[:splunk][:installdir]}/bin/restartsplunk" do 
+#                  source "startstopsplunk.erb"
+#                    mode 0755
+#                      action :create
+#                        variables({
+#                                    :action => "restart"
+#                                      })
+#                        end
 
 rightscale_marker :end
