@@ -28,7 +28,6 @@ bash "install_splunk" do
    #chown –R "#{node[:splunk_w11][:user]}"  "#{node[:splunk_w11][:installdir]}"
    #chown –R #{node[:splunk_w11][:user]}  #{node[:splunk_w11][:installdir]} 
    #chown –R node[:splunk_w11][:user]  node[:splunk_w11][:installdir] 
-   #chown –R "node[:splunk_w11][:user]"  "node[:splunk_w11][:installdir]" 
   EOH
 end 
 

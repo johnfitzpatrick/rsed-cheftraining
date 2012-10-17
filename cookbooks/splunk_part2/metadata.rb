@@ -8,11 +8,3 @@ version          "0.0.1"
 depends "rightscale"
 recipe "splunk_w11::install", "Installs splunk from a tar a file - V2"
 
-
-attribute "splunki_w11/user",
-:display_name => "Splunk User",
-:description => "The name of the Splunk user",
-:recipes => ["splunk_w11::install"],
-:required => "required"
-
-
